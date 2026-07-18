@@ -1,19 +1,36 @@
 .column {
-  flex: 1;
-  padding: 32px 40px;
+  flex: none;
+  width: 100%;
+  min-width: 0;
+  padding: 20px 16px;
+}
+
+@media (min-width: 900px) and (min-height: 640px) {
+  .column {
+    flex: 1;
+    width: auto;
+    padding: 32px 40px;
+  }
 }
 
 .headerRow {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 8px;
   margin-bottom: 12px;
+  min-width: 0;
+}
+
+@media (min-width: 900px) and (min-height: 640px) {
+  .headerRow {
+    gap: 12px;
+  }
 }
 
 .iconBadge {
   flex-shrink: 0;
-  width: 36px;
-  height: 36px;
+  width: 28px;
+  height: 28px;
   border-radius: 50%;
   border: 1.5px solid var(--invicta-gold);
   display: flex;
@@ -22,23 +39,53 @@
   color: var(--primary-text-navy);
 }
 
+@media (min-width: 900px) and (min-height: 640px) {
+  .iconBadge {
+    width: 36px;
+    height: 36px;
+  }
+}
+
 .iconBadge svg {
-  width: 16px;
-  height: 16px;
+  width: 14px;
+  height: 14px;
+}
+
+@media (min-width: 900px) and (min-height: 640px) {
+  .iconBadge svg {
+    width: 16px;
+    height: 16px;
+  }
 }
 
 .heading {
+  min-width: 0;
+  overflow-wrap: break-word;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.03em;
   color: var(--primary-text-navy);
-  font-size: 14px;
+  font-size: 12px;
+}
+
+@media (min-width: 900px) and (min-height: 640px) {
+  .heading {
+    letter-spacing: 0.05em;
+    font-size: 14px;
+  }
 }
 
 .content {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 14px;
-  line-height: 1.6;
+  font-size: 13px;
+  line-height: 1.55;
   color: var(--body-text);
+}
+
+@media (min-width: 900px) and (min-height: 640px) {
+  .content {
+    font-size: 14px;
+    line-height: 1.6;
+  }
 }
