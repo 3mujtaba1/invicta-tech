@@ -61,3 +61,6 @@ Thumbs.db
 # large source asset duplicated in public/ (the copy actually served) —
 # kept locally for reference, not tracked to avoid doubling repo size
 /assets/invicta-tech.pdf
+
+# leftover backup favicon, not the one actually shipped
+/app/favicon11.ico

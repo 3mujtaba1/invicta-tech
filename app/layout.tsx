@@ -9,7 +9,7 @@ const anton = Anton({
 });
 
 export const metadata: Metadata = {
-  title: "Invicta-Tech | Site Maintenance",
+  title: "Invicta-Tech",
   description: "Invicta-Tech's site is being rebuilt. Check back soon.",
 };
 
