@@ -57,10 +57,20 @@ export default function Home() {
 
       <div className={styles.footerCardWrap}>
         <section className={styles.footer}>
-          <FooterColumn icon={<PinIcon />} heading="Head Office">
+          <FooterColumn icon={<PinIcon />} heading="Registered Address">
             WeWork Rajapushpa Summit, SY. 130P &amp; 115/1P, Nanakramguda Rd,
             R.R. Dist., Financial District, Hyderabad, Telangana - 500032
           </FooterColumn>
+
+          <div className={styles.footerDividerFade} />
+
+          <FooterColumn icon={<PinIcon />} heading="Communication Address">
+            HINDUSTAN BLUE FIELD APARTMENT bearing Municipal No.
+            9-4-116/39/B, Bal Reddy Nagar, Tolichowki, Golconda, Hyderabad,
+            T.S. 500008.
+          </FooterColumn>
+
+          <div className={styles.footerDivider} />
 
           <FooterColumn icon={<PhoneIcon />} heading="Phone">
             <div className={styles.detailBlock}>
@@ -77,6 +87,8 @@ export default function Home() {
             </div>
           </FooterColumn>
 
+          <div className={styles.footerDivider} />
+
           <FooterColumn icon={<EnvelopeIcon />} heading="Email">
             <div className={styles.detailBlock}>
               <a
@@ -89,11 +101,10 @@ export default function Home() {
             <p className={styles.subHeading}>Website</p>
             <div className={styles.detailBlock}>www.invicta-tech.com</div>
             <p className={styles.subHeading}>Follow Us</p>
-            {/* TODO: placeholder social links — replace with actual company profile URLs once provided */}
             <div className={styles.socialRow}>
               <a
                 className={styles.socialIcon}
-                href="https://www.linkedin.com"
+                href="https://www.linkedin.com/company/invicta-tech/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -101,12 +112,13 @@ export default function Home() {
               </a>
               <a
                 className={styles.socialIcon}
-                href="https://www.instagram.com"
+                href="https://www.instagram.com/invictatech.official?igsh=ZHlrbXl6N2ljYWNl"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <InstagramIcon />
               </a>
+              {/* TODO: placeholder link — replace with actual Facebook profile URL once provided */}
               <a
                 className={styles.socialIcon}
                 href="https://www.facebook.com"

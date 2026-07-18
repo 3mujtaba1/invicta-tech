@@ -145,6 +145,13 @@
   font-size: 14px;
   padding: 16px 26px;
   cursor: pointer;
+  transition: transform 160ms ease, box-shadow 160ms ease, background-color 160ms ease;
+}
+
+.cta:hover {
+  background: var(--champagne-gold);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(4, 18, 37, 0.28);
 }
 
 .cta svg {
@@ -166,8 +173,24 @@
   overflow: hidden;
 }
 
-.footer > div:not(:last-child) {
-  border-right: 1px solid var(--stone-shadow);
+.footerDivider {
+  flex-shrink: 0;
+  width: 1px;
+  align-self: stretch;
+  background: var(--stone-shadow);
+}
+
+.footerDividerFade {
+  flex-shrink: 0;
+  width: 1px;
+  align-self: stretch;
+  margin: 24px 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(178, 138, 69, 0) 0%,
+    rgba(178, 138, 69, 0.5) 50%,
+    rgba(178, 138, 69, 0) 100%
+  );
 }
 
 .socialRow {
