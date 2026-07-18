@@ -47,8 +47,7 @@ export default function Home() {
             care and no shortcuts. We&rsquo;ll be back online shortly. In
             the meantime, get to know us below.
           </p>
-          {/* TODO: replace with actual PDF link once provided */}
-          <a href="#" className={styles.cta}>
+          <a href="/invicta-tech.pdf" download className={styles.cta}>
             <DownloadIcon />
             DOWNLOAD COMPANY PROFILE
           </a>
