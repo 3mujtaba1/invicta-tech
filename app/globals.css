@@ -1,0 +1,59 @@
+:root {
+  /* Navy */
+  --invicta-navy: #071a33;
+  --deep-marble-navy: #041225;
+  --midnight-blue: #0b274a;
+  --navy-reflection: #15395f;
+
+  /* Ivory / Neutral */
+  --invicta-ivory: #f7f4ee;
+  --warm-stone: #efe9de;
+  --quartz-white: #fcfaf6;
+  --stone-shadow: #d8d1c5;
+
+  /* Gold */
+  --invicta-gold: #b28a45;
+  --champagne-gold: #c9a667;
+  --deep-metallic-gold: #80602b;
+  --gold-reflection: #dfc88e;
+  --mineral-shadow: #4e391c;
+
+  /* Text */
+  --primary-text-navy: #071a33;
+  --body-text: #292b2f;
+  --muted-text: #6d6a64;
+
+  /* Wordmark-specific */
+  --wordmark-invicta: #0c192a;
+  --wordmark-tech: #09488f;
+}
+
+html {
+  height: 100%;
+}
+
+html,
+body {
+  max-width: 100vw;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  color: var(--body-text);
+  background: var(--invicta-ivory);
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

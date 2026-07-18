@@ -1,0 +1,44 @@
+.column {
+  flex: 1;
+  padding: 32px 40px;
+}
+
+.headerRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.iconBadge {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1.5px solid var(--invicta-gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-text-navy);
+}
+
+.iconBadge svg {
+  width: 16px;
+  height: 16px;
+}
+
+.heading {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--primary-text-navy);
+  font-size: 14px;
+}
+
+.content {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--body-text);
+}
